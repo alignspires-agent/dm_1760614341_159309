@@ -1,0 +1,196 @@
+Lambda Execution Result (Latest Run):
+INIT_REPORT Init Duration: 9983.53 ms	Phase: init	Status: timeout
+
+=== Experiment Output ===
+
+2025-10-16 11:36:26,095 - INFO - Starting machine learning experiment...
+
+2025-10-16 11:36:26,095 - INFO - Creating synthetic dataset...
+
+2025-10-16 11:36:26,433 - INFO - Dataset created with 1000 samples and 20 features
+
+2025-10-16 11:36:26,433 - INFO - Preprocessing data...
+
+2025-10-16 11:36:26,488 - INFO - Data split: Train=800, Test=200
+
+2025-10-16 11:36:26,489 - INFO - Data scaling completed
+
+2025-10-16 11:36:26,489 - INFO - Training Random Forest model...
+
+2025-10-16 11:36:26,819 - INFO - Model training completed successfully
+
+2025-10-16 11:36:26,819 - INFO - Evaluating model performance...
+
+2025-10-16 11:36:26,827 - INFO - Model accuracy: 0.9200
+
+2025-10-16 11:36:26,834 - INFO - Classification Report:
+
+precision    recall  f1-score   support
+
+0       0.92      0.92      0.92       100
+
+1       0.92      0.92      0.92       100
+
+accuracy                           0.92       200
+
+macro avg       0.92      0.92      0.92       200
+
+weighted avg       0.92      0.92      0.92       200
+
+2025-10-16 11:36:26,835 - INFO - Analyzing feature importance...
+
+2025-10-16 11:36:26,840 - INFO - Top 10 most important features:
+
+2025-10-16 11:36:26,840 - INFO -   Feature_12: 0.1223
+
+2025-10-16 11:36:26,840 - INFO -   Feature_5: 0.0769
+
+2025-10-16 11:36:26,840 - INFO -   Feature_6: 0.0684
+
+2025-10-16 11:36:26,840 - INFO -   Feature_2: 0.0663
+
+2025-10-16 11:36:26,840 - INFO -   Feature_17: 0.0581
+
+2025-10-16 11:36:26,840 - INFO -   Feature_1: 0.0564
+
+2025-10-16 11:36:26,840 - INFO -   Feature_16: 0.0517
+
+2025-10-16 11:36:26,840 - INFO -   Feature_4: 0.0500
+
+2025-10-16 11:36:26,840 - INFO -   Feature_10: 0.0472
+
+2025-10-16 11:36:26,840 - INFO -   Feature_9: 0.0441
+
+2025-10-16 11:36:26,840 - INFO - Experiment completed successfully!
+
+2025-10-16 11:36:26,840 - INFO - Final model accuracy: 0.9200
+
+=== Experiment Errors ===
+
+/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode
+
+warnings.warn("%s.  joblib will operate in serial mode" % (e,))
+
+{
+
+"experimentStatusCode": 200,
+
+"body": {
+
+"message": "Experiment completed successfully",
+
+"returncode": 0,
+
+"stdout": "2025-10-16 11:36:26,095 - INFO - Starting machine learning experiment...\n2025-10-16 11:36:26,095 - INFO - Creating synthetic dataset...\n2025-10-16 11:36:26,433 - INFO - Dataset created with 1000 samples and 20 features\n2025-10-16 11:36:26,433 - INFO - Preprocessing data...\n2025-10-16 11:36:26,488 - INFO - Data split: Train=800, Test=200\n2025-10-16 11:36:26,489 - INFO - Data scaling completed\n2025-10-16 11:36:26,489 - INFO - Training Random Forest model...\n2025-10-16 11:36:26,819 - INFO - Model training completed successfully\n2025-10-16 11:36:26,819 - INFO - Evaluating model performance...\n2025-10-16 11:36:26,827 - INFO - Model accuracy: 0.9200\n2025-10-16 11:36:26,834 - INFO - Classification Report:\n              precision    recall  f1-score   support\n\n           0       0.92      0.92      0.92       100\n           1       0.92      0.92      0.92       100\n\n    accuracy                           0.92       200\n   macro avg       0.92      0.92      0.92       200\nweighted avg       0.92      0.92      0.92       200\n\n2025-10-16 11:36:26,835 - INFO - Analyzing feature importance...\n2025-10-16 11:36:26,840 - INFO - Top 10 most important features:\n2025-10-16 11:36:26,840 - INFO -   Feature_12: 0.1223\n2025-10-16 11:36:26,840 - INFO -   Feature_5: 0.0769\n2025-10-16 11:36:26,840 - INFO -   Feature_6: 0.0684\n2025-10-16 11:36:26,840 - INFO -   Feature_2: 0.0663\n2025-10-16 11:36:26,840 - INFO -   Feature_17: 0.0581\n2025-10-16 11:36:26,840 - INFO -   Feature_1: 0.0564\n2025-10-16 11:36:26,840 - INFO -   Feature_16: 0.0517\n2025-10-16 11:36:26,840 - INFO -   Feature_4: 0.0500\n2025-10-16 11:36:26,840 - INFO -   Feature_10: 0.0472\n2025-10-16 11:36:26,840 - INFO -   Feature_9: 0.0441\n2025-10-16 11:36:26,840 - INFO - Experiment completed successfully!\n2025-10-16 11:36:26,840 - INFO - Final model accuracy: 0.9200\n",
+
+"stderr": "/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode\n  warnings.warn(\"%s.  joblib will operate in serial mode\" % (e,))\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 20890.78 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+
+START RequestId: f1d1d4a9-761a-4bb3-8d44-3a22de14af44 Version: $LATEST
+
+RequestId: f1d1d4a9-761a-4bb3-8d44-3a22de14af44 Error: Runtime exited without providing a reason
+Runtime.ExitError
+
+END RequestId: f1d1d4a9-761a-4bb3-8d44-3a22de14af44
+
+REPORT RequestId: f1d1d4a9-761a-4bb3-8d44-3a22de14af44	Duration: 20892.75 ms	Billed Duration: 20893 ms	Memory Size: 3008 MB	Max Memory Used: 151 MB	
+
+=== Experiment Output ===
+
+2025-10-16 11:36:28,023 - INFO - Starting machine learning experiment...
+
+2025-10-16 11:36:28,023 - INFO - Creating synthetic dataset...
+
+2025-10-16 11:36:28,026 - INFO - Dataset created with 1000 samples and 20 features
+
+2025-10-16 11:36:28,026 - INFO - Preprocessing data...
+
+2025-10-16 11:36:28,027 - INFO - Data split: Train=800, Test=200
+
+2025-10-16 11:36:28,028 - INFO - Data scaling completed
+
+2025-10-16 11:36:28,028 - INFO - Training Random Forest model...
+
+2025-10-16 11:36:28,358 - INFO - Model training completed successfully
+
+2025-10-16 11:36:28,358 - INFO - Evaluating model performance...
+
+2025-10-16 11:36:28,366 - INFO - Model accuracy: 0.9200
+
+2025-10-16 11:36:28,373 - INFO - Classification Report:
+
+precision    recall  f1-score   support
+
+0       0.92      0.92      0.92       100
+
+1       0.92      0.92      0.92       100
+
+accuracy                           0.92       200
+
+macro avg       0.92      0.92      0.92       200
+
+weighted avg       0.92      0.92      0.92       200
+
+2025-10-16 11:36:28,374 - INFO - Analyzing feature importance...
+
+2025-10-16 11:36:28,379 - INFO - Top 10 most important features:
+
+2025-10-16 11:36:28,379 - INFO -   Feature_12: 0.1223
+
+2025-10-16 11:36:28,379 - INFO -   Feature_5: 0.0769
+
+2025-10-16 11:36:28,379 - INFO -   Feature_6: 0.0684
+
+2025-10-16 11:36:28,379 - INFO -   Feature_2: 0.0663
+
+2025-10-16 11:36:28,379 - INFO -   Feature_17: 0.0581
+
+2025-10-16 11:36:28,379 - INFO -   Feature_1: 0.0564
+
+2025-10-16 11:36:28,379 - INFO -   Feature_16: 0.0517
+
+2025-10-16 11:36:28,379 - INFO -   Feature_4: 0.0500
+
+2025-10-16 11:36:28,379 - INFO -   Feature_10: 0.0472
+
+2025-10-16 11:36:28,379 - INFO -   Feature_9: 0.0441
+
+2025-10-16 11:36:28,379 - INFO - Experiment completed successfully!
+
+2025-10-16 11:36:28,379 - INFO - Final model accuracy: 0.9200
+
+=== Experiment Errors ===
+
+/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode
+
+warnings.warn("%s.  joblib will operate in serial mode" % (e,))
+
+{
+
+"experimentStatusCode": 200,
+
+"body": {
+
+"message": "Experiment completed successfully",
+
+"returncode": 0,
+
+"stdout": "2025-10-16 11:36:28,023 - INFO - Starting machine learning experiment...\n2025-10-16 11:36:28,023 - INFO - Creating synthetic dataset...\n2025-10-16 11:36:28,026 - INFO - Dataset created with 1000 samples and 20 features\n2025-10-16 11:36:28,026 - INFO - Preprocessing data...\n2025-10-16 11:36:28,027 - INFO - Data split: Train=800, Test=200\n2025-10-16 11:36:28,028 - INFO - Data scaling completed\n2025-10-16 11:36:28,028 - INFO - Training Random Forest model...\n2025-10-16 11:36:28,358 - INFO - Model training completed successfully\n2025-10-16 11:36:28,358 - INFO - Evaluating model performance...\n2025-10-16 11:36:28,366 - INFO - Model accuracy: 0.9200\n2025-10-16 11:36:28,373 - INFO - Classification Report:\n              precision    recall  f1-score   support\n\n           0       0.92      0.92      0.92       100\n           1       0.92      0.92      0.92       100\n\n    accuracy                           0.92       200\n   macro avg       0.92      0.92      0.92       200\nweighted avg       0.92      0.92      0.92       200\n\n2025-10-16 11:36:28,374 - INFO - Analyzing feature importance...\n2025-10-16 11:36:28,379 - INFO - Top 10 most important features:\n2025-10-16 11:36:28,379 - INFO -   Feature_12: 0.1223\n2025-10-16 11:36:28,379 - INFO -   Feature_5: 0.0769\n2025-10-16 11:36:28,379 - INFO -   Feature_6: 0.0684\n2025-10-16 11:36:28,379 - INFO -   Feature_2: 0.0663\n2025-10-16 11:36:28,379 - INFO -   Feature_17: 0.0581\n2025-10-16 11:36:28,379 - INFO -   Feature_1: 0.0564\n2025-10-16 11:36:28,379 - INFO -   Feature_16: 0.0517\n2025-10-16 11:36:28,379 - INFO -   Feature_4: 0.0500\n2025-10-16 11:36:28,379 - INFO -   Feature_10: 0.0472\n2025-10-16 11:36:28,379 - INFO -   Feature_9: 0.0441\n2025-10-16 11:36:28,379 - INFO - Experiment completed successfully!\n2025-10-16 11:36:28,379 - INFO - Final model accuracy: 0.9200\n",
+
+"stderr": "/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode\n  warnings.warn(\"%s.  joblib will operate in serial mode\" % (e,))\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 1509.04 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+
